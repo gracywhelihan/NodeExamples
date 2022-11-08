@@ -19,4 +19,4 @@ function getName(request, response) {
 }
 
 server.listen(8080, serverStart);
-server.get("/name", getName);
+server.get("/hi", getName);
