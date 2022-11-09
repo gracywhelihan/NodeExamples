@@ -6,7 +6,12 @@ function serverStart() {
 }
 
 function getName(request, response) {
-  let str = "🤠😇\n🤯🫠\n"
+  let rnd = Math.random()*10;
+  if(rnd%2 == 0){
+    let str = "🤠😇\n😇🤠\n";
+  }else{
+    let str = "🤯🫠\n🫠🤯\n";
+  }
   response.send(str + str + str + str + str + str);
 }
 
